@@ -7,7 +7,7 @@ Networking (ou Redes) é qualquer tipo de conexão, sendo mais específicamente 
 ## O que é a Internet?
 
 <p style="text-indent: 30px;">
-A internet é o que permite dispositivos diferentes se comunicarem. A internet é constituida de pequenas redes conectadas entre si, sendo essas pequenas redes chamadas de redes privadas (private network) e as redes que conectam as redes privadas chamada de rede pública (public network).
+A internet é o que permite dispositivos diferentes se comunicarem. A internet é constituida de pequenas redes conectadas entre si, sendo essas pequenas redes chamadas de redes privadas (private network) e as redes que conectam as redes privadas chamada de rede pública (public network). Resumindo, se trata da rede de redes porque é formada literalmente por milhares de redes locais conectadas entre si.
 </p>
 
 <div>
@@ -70,4 +70,13 @@ Cada dispositivo que é capaz de se conectar à rede possui um microchip na plac
 
 <p style="text-indent: 30px;">
 O MAC address pode ser falsificado ou "spoofed" em um processo chamado spoofing no qual um dispositivo conectado à rede finge se identificar como outro dispositivo usando seu MAC address, o que pode levar à sistemas com um design de segurança mal-feito a quebrarem, já que enxergam o dispositivo como seguro. Lugares como cafeterias e hoteis comumente usam controle de MAC address para configurar o WI-FI chamando-o de "Guest" ou "Public".
+</p>
+
+## O que são Redes locais?
+
+<p style="text-indent: 30px;">
+São redes simples, que podem ser de apenas dois computadores até que conecta milhões de dispositivos instaladas a pequenos escritórios ou residências. Esses tipos de redes são chamados de redes SOHO e compartilham recursos como: impressoras, documentos, fotos e músicas, entre outros computadores locais.
+</p>
+
+<p style="text-indent: 30px;">
 </p>
