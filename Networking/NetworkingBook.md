@@ -1,4 +1,4 @@
-**Referência:** Redes de computadores e a internet: uma abordagem top-down de James F. Kurose, Leitura realizada pela plataforma biblioteca virtual.
+**Referência:** KUROSE, J. F.; ROSS, K. W. Redes de computadores e a internet: uma abordagem top-down. 3. ed. São Paulo, SP: Pearson, 2005. E-book. Disponível em: https://plataforma.bvirtual.com.br. Acesso em: 09 out 2025.
 
 ## O que são comutadores de pacotes?
 
@@ -17,6 +17,14 @@ Os sistemas finais, os comutadores de pacotes e outras peças da Internet execut
 
 Pela imagem, é visivel que o protocolo humano (boas maneiras) ordena que iniciemos uma comunicação primeiramente com um "oi" e um "oi" como resposta indicando que pode-se prosseguir na interação. No caso de uma resposta diferente do "oi" exemplificado pode indicar portanto incapacidade de comunicação. Após isso, é de protocolo humano requisitar algo, que no caso do exemplo, seria as horas. Esse exemplo mostra que deve-se garantir o protocolo para que as respostas batam e a interação seja realizada, sendo portanto válido também para redes para que entidades comunicantes executem o mesmo protocolo para que uma tarefa seja realizada.
 
+## Em relação à protocolos de rede:
+
+O protocolo de rede trabalha com a comunicação de hardware ou software de algum equipamento (computador, roteador ou outro equipamento habilitado para rede). **Protocolos implementados em hardware** nas placas de inteface de rede de dois computadores conectados fisicamente controlam o fluxo de bits do barramento entre as duas placas de interface de rede; **protocolos de controle** de congestionamento em sistemas finais controlam a taxa com que os pacotes são transmitidos entre a origem e o destino; **protocolos de roteadores** determinam o caminho de um pacote da fonte ao destino.
+
+Um exemplo de protocolo de rede pode ser a requisição a um servidor Web ao digitar a URL de uma página Web no browser. Primeiramente o computador envia uma mensagem de requisição de conexão ao servidor Web e aguarda a resposta. Ao receber essa requisição, o servor retorna uma mensagem de resposta de conexão, sabendo que está tudo certo para requisitar o documento da Web, o computador envia o nome da página Web que quer buscar naquele servidor com uma mensagem GET e, por fim, o servidor retorna a página Web (arquivo) para o computador. Sendo portanto, definido o protocolo como: 
+
+"*Um protocolo define o formato e a ordem das mensagens trocadas entre duas ou mais entidades comunicantes, bem como as ações realizadas na transmissão e/ou no recebumento de uma mensagem ou outro evento*" (F. KUROSE, James, 2005, p.7)
+
 ## O que são, de fato, os RFCs:
 
 RFCs são documentos que definem padrões desenvolvidos pela IETF para protocolos. Inicialmente, os RFCs recebiam solicitações de comentários para resolver problemas de arquitetura que a a percursora da internet enfrentava, sendo um tipo de documentação muito técnica e detalhados. Definem protocolos como TCP, IP, HTTP e SMTP (Simple Mail Transfer Protocol). Existem mais de 3500 RFCs. Há também outros tipos de padrões especificados por outros órgãos como o IEEE que define, por exemplo, o IEEE 802 LAN/MAN que especifica os padrões de Ethernet e Wi-Fi sem fio.
@@ -24,3 +32,13 @@ RFCs são documentos que definem padrões desenvolvidos pela IETF para protocolo
 ## Exemplificando e explicando intranets:
 
 A internet é um tipo de rede pública (rede global de redes) e rede privada são comumentes usadas em redes corporativas ou governamentais, cujos hospedeiros não podem trocar mensagens com hospedeiros que estão fora da rede privada (a menos que as mensagens passem por dispositivos denominados **firewall** que restringe o fluxo de mmensagens para dentro e para fora da rede). Essas redes privadas são frequentemente denominadas **intanets** por usarem o mesmo tipo de hospedeiros, roteadores, elaces e protocolos da inetnet pública.
+
+## Sistemas finais, clientes e servidores:
+
+Computadores conectados à internet são usualmente denominados **sistemas finais** pois estão na periferia da internet. Sistemas finais são, de forma geral: Commputadores de mesa, servidores, computadores móveis e, atualmente, equipamentos eletroeletrônicos como TVs, eletrodomésticos entre outro.
+
+Sistemas finais também são denominados de **hosts** por hospedarem programas de aplicações como browser da Web, programa de servidor Web, leitor de e-mail e etc. Sistemas finais são ainda subdivididos em duas categorias: **clientes** e **servidores**. Normalmente, clientes são PCs de mesa ou móveis enquanto servidores costumam ser ser máquinas mais poderosas que armazenam e distribuem páginas Web, vídeo em tempo real e etc.
+
+Um **programa cliente** é um programa que funciona em um sistema final, que solicita um serviço de um **programa servidor**, que funciona em um outro sistema final, sendo conhecido como modelo cliente-servidor. Aplicações cliente-servidor de Internet são, por definição, **aplicações distribuídas**, interagindo por envio de mensagens um para o outro pela Internet. Os roteadores, enlaces e outros componentes da Internet funcionam de forma similar a uma caixa-preta que transfere mensagem entre componentes distribuídos, comunicantes, de uma aplicação de Internet (Não confundir com logs que são os registros de eventos como conexões, erros e etc. que podem ajudar a entender comportamente interno dessa "caixa-preta").
+
+Nem todos as aplicações da Internet atual trabalham com programas puramente clientes que interagem com programas puramente servidores. Exemplo: Aplicações P2P que funciona como um programa cliente e também como um programa servidor. Funciona como cliente para requisição de um arquivo de outro par e o programa funciona como um servidor quando envia um arquivo para outro par (sendo par a máquina de um usuário).
