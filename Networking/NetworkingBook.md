@@ -61,3 +61,28 @@ Nem todos as aplicações da Internet atual trabalham com programas puramente cl
 ## Onde cada tipo de serviço é usado?
 
 Maioria das aplicações conhecidas da internet utilizam TCP, sendo elas (exemplos): Telnet, SMTP, FTP e HTTP. Entretanto, a UDP é comumente usado para aplicações de multimídia como telefone por internet e videoconferência.
+
+---
+
+## Núcleo da rede, comutação de circuitos e comutação de pacotes:
+
+O **núcleo da rede** refere-se à malha de roteadores que interconecta os sistemas finais da Internet. Existem duas abordagens principais para a transmissão de dados nesse núcleo: a **comutação de circuitos** e a **comutação de pacotes**.
+
+Na **comutação de circuitos**, todos os recursos necessários (como buffers e taxa de transmissão dos enlaces) são **reservados de forma dedicada** durante toda a sessão de comunicação. Isso significa que, antes de a comunicação começar, é estabelecido um **caminho fixo e exclusivo** entre origem e destino, garantindo uma taxa de transmissão constante. Essa abordagem é típica das redes telefônicas tradicionais, onde o circuito é estabelecido antes da conversa e mantido até o final da chamada.
+
+Já na **comutação de pacotes**, esses recursos **não são reservados** antecipadamente. Em vez disso, os dados são divididos em pequenos pacotes que compartilham dinamicamente os recursos da rede (como os enlaces e buffers dos roteadores) com pacotes de outras transmissões. Assim, cada pacote pode até seguir caminhos diferentes até o destino. Isso **torna a rede mais eficiente e flexível, mas pode gerar atrasos variáveis (fila de espera nos roteadores) e perdas ocasionais de pacotes**.
+
+"*Se quisermos ir ao restaurante que exige reserva (comutação de circuitos), teremos que passar pelo aborrecimento de telefonar antes de sair de casa. Mas, quando chegarmos lá, poderemos, em princípio, ser imediatamente atendidos e servidos. No restaurante que não exige reserva (comutação de pacotes), não precismamos nos dar ao trabalho de reservar mesa, porém, quando lá chegarmos, talvez tenhamos de esperar*" (F. KUROSE, James, 2005, p.11)
+
+### Diferença na conexão tipos de conexão:
+<div>
+    <img style="display: block; margin: auto;" alt="TCP_e_CC" height="670" width="980" src="/Networking/Images/TCP_e_CC.png">
+</div>
+
+Portanto, principais diferenças são: Comutação de circuito reserva recursos reais (fios, banda, buffers) enquanto o TCP apenas simula uma conexão confiável sobre uma rede que usa comutação de pacotes (IP), isto é, TCP organiza, reenvia e garante ordem dos pacotes, mas os roteados não reservam nada para ele.
+
+<div>
+    <img style="display: block; margin: auto;" alt="analogiaTCP_e_CC" height="670" width="980" src="/Networking/Images/AnalogiaTCP_CC.png">
+</div>
+
+Nem todas as redes são classificadas como redes de comutação de circuitos puras ou redes de comutação de pacotes puras, porém, essa classificação auxilia na compreensão de redes de telecomunicação.
